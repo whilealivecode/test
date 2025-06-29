@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='ru'>
+	<head>
+		<meta charset='UTF-8'>
+		<title>Седона - небольшой городок в Аризоне, заслуживающий большего!</title>
+	</head>
+    <body>
+        <section class="modal">
+            <h2>Поиск гостиницы в Седоне</h2>
+            <form class="hotel-search" action="https://echo.htmlacademy.ru/" method="post">
+                <fieldset>
+                    <legend class="visually-hidden">Даты проживания</legend>
+                    <label for="check-in">Дата Заезда:</label>
+                    <div class="input-wrapper">
+                        <input type="text" name="check-in-date" id="check-in" value="27 апреля 2020">
+                        <span class="check-date">Мы не можем отправить вас в прошлое.</span>
+                    </div>
+                    <label for="check-out">Дата Выезда:</label>
+                    <div class="input-wrapper">
+                        <input type="text" name="check-out-date" id="check-out" value="1 сентября 2023">
+                        <span class="check-date">На эти даты есть свободные номера. Пока есть.</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="visually-hidden">Количество проживающих</legend>
+                    <label for="adults">Взрослые:</label>
+                    <div class="number-input-wrapper">
+                        <button type="button">−</button>
+                        <input type="number" name="adults-count" id="adults" min="1" max="10" value="2">
+                        <button type="button">+</button>
+                    </div>
+                    <label for="children">Дети:</label>
+                    <div class="number-input-wrapper">
+                        <button type="button">-</button>
+                        <input type="number" name="children-count" id="children" min="1" max="10" value="2">
+                        <button type="button">+</button>
+                    </div>
+                </fieldset>
+                <button type="submit">Найти</button>
+                <span class="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </form>            
+        </section>
+    </body>
+</html>
